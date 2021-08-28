@@ -1,0 +1,81 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Consolas;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation: color 1s linear infinite;
+}
+@keyframes color {
+    0% {
+        background-image: url("https://kartinkin.com/uploads/posts/2021-04/1617602840_2-p-psikhodelicheskii-fon-3.jpg");
+        background-size:  cover;
+    }
+    25% {
+        background-image: url("https://wallup.net/wp-content/uploads/2018/09/27/665024-fractal-abstract-abstraction-art-artwork.jpg");
+        background-size:  cover;
+    }
+    50% {
+        background-image: url("http://cdn.wallpapername.com/1114x900/20180408/5aca9f0ce9ac7.jpg");
+        background-size:  cover;
+    }
+    75% {
+        background-image: url("https://st.depositphotos.com/1968831/4445/i/950/depositphotos_44452519-stock-photo-colorful-fractal-decorative-feature-magic.jpg");
+        background-size:  cover;
+    }
+    100% {
+        background-image: url("https://im0-tub-ru.yandex.net/i?id=d37d8082fe3b9e7043097c9294838e78-l&ref=rim&n=13&w=1080&h=1080");
+        background-size:  cover;
+    }
+
+}
+.circle {
+    position: relative;
+    width: 600px;
+    height: 600px;
+   /* background: #ccc; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: url(https://media.discordapp.net/attachments/772164370406965271/881271385106825236/image0.png?width=710&height=587);
+    background-size: cover;
+    border-radius: 50%;
+    filter: brightness(1.1) contrast(1.1);
+    text-align: center;
+    animation: rotateText 5s linear infinite;
+}
+.text {
+    color: lawngreen;
+    font-size: 200%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  /*  animation: rotateText 20s linear infinite; */
+}
+@keyframes rotateText {
+    0%,100% {
+        transform: rotate(360deg) translateX(-100px) translateY(-200px);
+
+    }
+    50% {
+        transform: rotate(0deg) translateX(100px) translateY(200px);
+    }
+}
+.text span {
+    position: absolute;
+    left: 50%;
+    font-size: 1.2em;
+    transform-origin: 0 100px;
+}
